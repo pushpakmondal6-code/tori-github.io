@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Tori ❤️</title>
+
+    <!-- Our design file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div id="stars"></div>
+
+    <div id="balloons"></div>
+
+    <div id="confetti-container"></div>
+
+
+    <!-- =========================================
+         MUSIC PLAYER
+    ========================================== -->
+<!-- =========================================
+     BACKGROUND MUSIC PLAYER
+========================================= -->
+
+<audio id="backgroundMusic" loop>
+    <source src="be my baby.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton"
+        class="music-button"
+        onclick="toggleBackgroundMusic()">
+
+    🎵
+
+</button>
+
+
+    <!-- =========================================
+         01 — OPENING
+    ========================================== -->
+
+    <section id="opening"
+             class="page-section opening-section">
+
+        <div class="opening-content">
+
+            <p class="tiny-heading">
+                A LITTLE SOMETHING I MADE FOR YOU
+            </p>
+
+            <h1>
+                Happy Birthday
+                <span class="pink-text">Tori</span>
+                ❤️
+            </h1>
+
+            <p class="opening-message">
+
+                Today isn't just another day.
+
+                <br>
+
+                Today is
+                <span class="highlight">
+                    YOUR DAY.
+                </span>
+
+            </p>
+
+
+            <button class="main-button"
+                  onclick="startBirthdayWorld()">
+                  ENTER YOUR BIRTHDAY WORLD ✨
+            </button>
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         01.5 — BIRTHDAY CURTAIN
+    ========================================== -->
+
+    <section id="birthdayCurtain"
+             class="birthday-curtain">
+
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+
+
+        <!-- QUESTION -->
+
+        <div class="curtain-question"
+             id="curtainQuestion">
+
+            <p class="tiny-heading">
+                BEFORE WE BEGIN...
+            </p>
+
+            <h2>
+                Do you want to know
+                <br>
+                whose birthday is today? 🎀
+            </h2>
+
+            <div class="curtain-buttons">
+
+                <button class="curtain-yes"
+                        onclick="showBirthdayGirl()">
+
+                    YES ❤️
+
+                </button>
+
+                <button class="curtain-no"
+                        onclick="birthdayNo()">
+
+                    NO 👀
+
+                </button>
+
+            </div>
+
+            <p id="noMessage"
+               class="curtain-no-message">
+            </p>
+
+        </div>
+
+
+        <!-- BIRTHDAY GIRL BOOK -->
+
+        <div class="birthday-book"
+             id="birthdayBook">
+
+            <div class="book-page book-page-back">
+
+                <div class="book-content">
+
+                    <p class="tiny-heading">
+                        LET ME INTRODUCE HER...
+                    </p>
+
+                    <h2>
+                        The Birthday Girl 🎀
+                    </h2>
+
+                    <div class="childhood-photo-frame">
+
+                        <img src="photos/childhood.jpg"
+                             alt="Birthday girl childhood photo">
+
+                    </div>
+
+                  <p class="childhood-note">
+
+   She was once this
+   bundle of Golumolu Kuchikuchipu. ❤️
+<br><br>
+
+    Have you noticed that she is announcing her 
+    arrival through her mobile???
+</p>
+
+<button class="main-button birthday-book-continue"
+        onclick="continueToCake()">
+
+    CONTINUE TO MY BIRTHDAY WORLD → ✨
+
+</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="book-page book-page-front">
+
+                <div class="book-content">
+
+                    <p class="tiny-heading">
+                        AND THIS LITTLE GIRL...
+                    </p>
+
+                    <h2>
+                        Grew Up To Be
+                        <br>
+                        My Birthday Girl. ❤️
+                    </h2>
+
+                    <p class="book-message">
+
+                        It's about celebrating
+                        the person who makes
+                        this world brighter.
+
+                        <br><br>
+
+                       As she is so special then how can 
+                       you see her in an ordinary method, 
+                       she will come to you specially also, 
+                       so you have to wait a little more to see
+                       her.
+
+
+                       Lets tap the button now.....
+                    </p>
+
+                    <button class="main-button"
+                            onclick="continueFromBirthdayGirl()">
+
+                        CONTINUE TO MY BIRTHDAY WORLD → ✨
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+         02 — BIRTHDAY CAKE
+    ========================================== -->
+
+    <section id="cakeSection"
+             class="page-section cake-section">
+
+        <p class="tiny-heading">
+            FIRST THING FIRST...
+        </p>
+
+        <h2>
+            Make A Birthday Wish 🎂
+        </h2>
+
+        <p class="section-description">
+
+            Close your eyes.
+
+            <br>
+
+            Think of your wish.
+
+            <br>
+
+            Then blow out your candles. 🕯️
+
+        </p>
+
+
+        <!-- Cake -->
+
+        <div class="cake-container">
+
+            <div class="cake">
+
+                <div class="candle candle-one">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-two">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-three">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-body">
+
+                    <div class="cake-decoration">
+                        ♥ ♥ ♥
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button class="main-button"
+                onclick="blowCandles()">
+
+            🕯️ BLOW OUT THE CANDLES
+
+        </button>
+
+
+        <p id="wishMessage"
+           class="hidden-message">
+
+            ✨ Wish made! ✨
+
+            <br>
+
+            May this year bring you
+            everything your heart wishes for. ❤️
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         03 — BIRTHDAY ROOM
+    ========================================== -->
+
+    <section id="birthdayRoom"
+             class="page-section room-section">
+
+        <p class="tiny-heading">
+            WELCOME TO YOUR LITTLE WORLD
+        </p>
+
+        <h2>
+            Everything Here Is For You 🎀
+        </h2>
+
+        <p class="section-description">
+
+     I made you a whole little world Babeeee.
+
+        </p>
+
+
+        <!-- Floating balloons -->
+
+        <div class="balloon-row">
+
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+            <span>🎈</span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         04 — SEVEN GIFTS
+    ========================================== -->
+
+    <section id="gifts"
+             class="page-section gifts-section">
+
+        <p class="tiny-heading">
+            YOUR BIRTHDAY GIFTS
+        </p>
+
+        <h2>
+            Seven Little Surprises 🎁
+        </h2>
+
+        <p class="section-description">
+
+            Open them one by one.
+
+            <br>
+
+            But don't rush...
+
+            there is a final gift waiting at the end.
+
+        </p>
+
+
+        <div class="gift-grid">
+
+
+            <!-- Gift 1 -->
+
+            <button class="gift-card"
+                    onclick="openGift(1)">
+
+                <span class="gift-icon">
+                    💌
+                </span>
+
+                <span>
+                    A Letter
+                </span>
+
+            </button>
+
+
+            <!-- Gift 2 -->
+
+            <button class="gift-card"
+                    onclick="openGift(2)">
+
+                <span class="gift-icon">
+                    🌸
+                </span>
+
+                <span>
+                    A Bouquet
+                </span>
+
+            </button>
+
+
+            <!-- Gift 3 -->
+
+            <button class="gift-card"
+                    onclick="openGift(3)">
+
+                <span class="gift-icon">
+                    📸
+                </span>
+
+                <span>
+                    Memories
+                </span>
+
+            </button>
+
+
+            <!-- Gift 4 -->
+
+            <button class="gift-card"
+                    onclick="openGift(4)">
+
+                <span class="gift-icon">
+                    🎧
+                </span>
+
+                <span>
+                    A Song
+                </span>
+
+            </button>
+
+
+            <!-- Gift 5 -->
+
+            <button class="gift-card"
+                    onclick="openGift(5)">
+
+                <span class="gift-icon">
+                    🎮
+                </span>
+
+                <span>
+                    A Game
+                </span>
+
+            </button>
+
+
+            <!-- Gift 6 -->
+
+            <button class="gift-card"
+                    onclick="openGift(6)">
+
+                <span class="gift-icon">
+                    🌟
+                </span>
+
+                <span>
+                    Your Next Year
+                </span>
+
+            </button>
+
+
+            <!-- Gift 7 -->
+
+           <button class="gift-card locked-gift"
+        id="gift7"
+        onclick="openGift(7)">
+
+    <span class="gift-icon" id="gift7Icon">
+        🔒
+    </span>
+
+    <span id="gift7Text">
+        One Last Thing
+    </span>
+
+</button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         05 — LETTER
+    ========================================== -->
+
+    <section id="letter"
+             class="page-section letter-section">
+
+        <div class="envelope"
+             onclick="openLetter()">
+
+            <div class="envelope-flap">
+                💌
+            </div>
+
+            <div class="envelope-body">
+
+                <p>
+                    A letter for you
+                </p>
+
+                <small>
+                    Click to open
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div id="letterContent"
+             class="letter-content hidden">
+
+            <p class="tiny-heading">
+                DEAR MY TORI...
+            </p>
+
+            <h2>
+                Happy Birthday, My Beautiful Kuchupuchu ❤️
+            </h2>
+
+            <p>
+
+                Today is your day.
+
+                <br><br>
+
+                And although I could simply send you
+                a birthday message...
+
+                <br><br>
+
+                I wanted to make something that you
+                could actually keep.
+
+                <br><br>
+
+                Something that says:
+
+                <br>
+
+                <strong>
+                    MY WORLD came to THIS WORLD.
+                </strong>
+
+                <br><br>
+
+                (Ekhane ektu bangregi tei likhi amader..
+                Happy Birthday My Sonaaaaaa My Chunnumunnu,
+                Eibhabei sobsomoi hasbe, ar tumi toh janoi tomar
+                kichu hole kothai contact korbe, eitoh tomar
+                pagol achei sobsomoi tomar sathe.Tumi jokhon amar best
+                gift tokhon ajker tomar ei special din eo ami tomake tomar
+                best gift ta deoyar best chesta korlam.Return gift
+                hisebe sudhu chaibo onekgulo kissyyyyy ....HEHEHEHE 
+                bujhle priyo??? Ar baki tumi toh sobosomoi amar kache 
+                thakchoi ar amio..Kothai ar spark kombe bolo!!!! 
+                Emnitei jotokhon thaki tarporeo mon bole 
+                "Abhi Na Jao Chhod Kar." )
+
+
+                I LOVE YOU
+                I JUST LOVE YOU
+
+                <br><br>
+
+                And I hope this little website
+                makes you smile today.
+
+                <br><br>
+
+                Happy Birthday LOML. ❤️
+
+                <br><br>
+
+                — Your Pushpak
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         06 — FLOWER WISHES
+    ========================================== -->
+
+    <section id="flowers"
+             class="page-section flowers-section">
+
+        <p class="tiny-heading">
+            A BOUQUET MADE OF WISHES
+        </p>
+
+        <h2>
+            Flowers For You 🌷
+        </h2>
+
+        <p class="section-description">
+
+            Every flower carries one birthday wish.
+
+            <br>
+
+            Click one.
+
+        </p>
+
+
+        <div class="flower-grid">
+
+            <button onclick="showFlowerWish('Happiness 🌸')">
+                🌸
+            </button>
+
+            <button onclick="showFlowerWish('Peace 🌷')">
+                🌷
+            </button>
+
+            <button onclick="showFlowerWish('Success 🌻')">
+                🌻
+            </button>
+
+            <button onclick="showFlowerWish('Beautiful memories 🌹')">
+                🌹
+            </button>
+
+            <button onclick="showFlowerWish('Everything your heart wishes for 🌺')">
+                🌺
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         07 — PHOTOS / BIRTHDAY GIRL
+    ========================================== -->
+
+    <section id="birthdayGirl"
+             class="page-section photo-section">
+
+        <p class="tiny-heading">
+            THE BIRTHDAY GIRL
+        </p>
+
+        <h2>
+            The Girl We're Celebrating 🎀
+        </h2>
+
+        <p class="section-description">
+
+            A few pictures of the most important
+            person on today's website.
+
+        </p>
+
+
+        <div class="polaroid-gallery">
+
+
+            <div class="polaroid polaroid-one">
+
+                <img src="photos/photo1.jpg" alt="Tori">
+
+            </div>
+
+
+            <div class="polaroid polaroid-two">
+
+                <img src="photos/photo2.jpg" alt="Tori">
+
+            </div>
+
+
+            <div class="polaroid polaroid-three">
+
+                <img src="photos/photo3.jpg" alt="Tori">
+                
+            </div>
+
+
+            <div class="polaroid polaroid-four">
+
+                <img src="photos/photo4.jpg" alt="Tori">
+
+           </div>
+
+
+           <div class="polaroid polaroid-five">
+                
+                <img src="photos/photo5.jpg" alt="Tori">
+    
+           </div>
+
+
+           <div class="polaroid polaroid-six">
+               
+                <img src="photos/photo6.jpg" alt="Tori">
+    
+           </div>
+        
+        
+           <div class="polaroid polaroid-seven">
+    
+                <img src="photos/photo7.jpg" alt="Tori">
+    
+           </div>
+        
+        
+           <div class="polaroid polaroid-eight">
+    
+                <img src="photos/photo8.jpg" alt="Tori">
+    
+           </div>
+        
+           <div class="polaroid polaroid-nine">
+
+                <img src="photos/photo9.jpg" alt="Tori">
+
+           </div>
+
+
+         <div class="polaroid polaroid-ten">
+
+                <img src="photos/photo10.jpg" alt="Tori">
+
+         </div> 
+        
+    </div>
+
+    </section>
+
+
+
+  <!-- =========================================
+     08 — MUSIC
+========================================== -->
+
+<section id="music"
+         class="page-section music-section">
+
+    <div class="vinyl">
+        🎵
+    </div>
+
+    <audio id="birthdayMusic" loop>
+        <source src="kagaz-web.mp3" type="audio/mpeg">
+    </audio>
+
+    <p class="tiny-heading">
+        A SONG FOR YOU
+    </p>
+
+    <h2>
+        I Love You, Pari ❤️
+    </h2>
+
+    <p class="section-description">
+
+        Many songs remind me of you but you know just how
+        special this particular song has been to us, even
+        from before we started expressing our love for each other.
+
+    </p>
+
+    <p class="song-name">
+        🎶 Our Song
+    </p>
+
+    <button class="main-button music-play-button"
+            onclick="toggleMusic()">
+       
+        ▶ PLAY OUR SONG
+           
+            <audio id="birthdayMusic" loop controls>
+             <source src="Kagaz.mp3" type="audio/mpeg">
+            </audio>
+    
+        </button>
+
+    <p class="music-status" id="musicStatus">
+        Press play when you're ready 🎧❤️
+    </p>
+
+</section>
+
+
+
+    <!-- =========================================
+         09 — COUNTDOWN
+    ========================================== -->
+
+    <section id="countdown"
+             class="page-section countdown-section">
+
+        <p class="tiny-heading">
+            COUNTING DOWN TO YOUR DAY
+        </p>
+
+        <h2>
+            Your Birthday Countdown ⏳
+        </h2>
+
+
+        <div class="countdown-box">
+
+            <div>
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div>
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+
+        <p>
+            Until the moment My Diva like Angel
+            gets to take over the world. ✨
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         10 — OUR STORY
+    ========================================== -->
+
+    <section id="story"
+             class="page-section story-section">
+
+        <p class="tiny-heading">
+            A LITTLE PIECE OF US
+        </p>
+
+        <h2>
+            Our Story 📖
+        </h2>
+
+        <p class="section-description">
+
+            Every story has chapters.
+
+            <br>
+
+            This is ours.
+
+        </p>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        The Beginning
+                    </h3>
+
+                    <p>
+                        01st January 2026, that restart, that whole
+                        night conversation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Something Changed
+                    </h3>
+
+                    <p>
+                        We knowFriends equations changed 
+                        something into a new one. And a result
+                        came on 19th March.I have nothing more than
+                        this for telling you.You know everything. 
+
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h3>
+                        Our Favourite Memory
+                    </h3>
+
+                    <p>
+                        I can't point out any memory of us
+                        as a very special memory because 
+                        every memories, everyday, every moments
+                        are our special memory.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-number">
+                    04
+                </span>
+
+                <div>
+
+                    <h3>
+                        Today ❤️
+                    </h3>
+
+                    <p>
+                        And now we're here,today 
+                        celebrating you.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         11 — BIRTHDAY QUIZ
+    ========================================== -->
+
+    <section id="quiz"
+             class="page-section quiz-section">
+
+        <p class="tiny-heading">
+            TIME FOR A LITTLE TEST 😂
+        </p>
+
+        <h2>
+            Birthday Girl Quiz 🎮
+        </h2>
+
+        <p class="section-description">
+
+            Let's see how well you remember
+            our little world.
+
+        </p>
+
+
+        <div class="quiz-box">
+
+            <p id="quizQuestion">
+                Question loading...
+            </p>
+
+
+            <div id="quizAnswers">
+
+            </div>
+
+
+            <p id="quizResult"
+               class="quiz-result">
+
+            </p>
+
+
+            <button id="nextQuestion"
+                    class="main-button hidden"
+                    onclick="nextQuizQuestion()">
+
+                NEXT QUESTION →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         12 — YOUR NEXT YEAR
+    ========================================== -->
+
+    <section id="future"
+             class="page-section future-section">
+
+        <p class="tiny-heading">
+            YOUR NEXT CHAPTER
+        </p>
+
+        <h2>
+            Your Year Ahead 🌟
+        </h2>
+
+        <p class="section-description">
+
+            My wishes for My girl
+            starting another beautiful chapter.
+
+        </p>
+
+
+        <div class="future-grid">
+
+
+            <div class="future-card">
+
+                <span>🌸</span>
+
+                <h3>
+                    Happiness
+                </h3>
+
+                <p>
+                    I hope this year gives you
+                    countless reasons to smile.
+                    Always smile like this, you know 
+                    it is my favourite thing in this 
+                    world.
+                </p>
+
+            </div>
+
+
+            <div class="future-card">
+
+                <span>🎓</span>
+
+                <h3>
+                    Success
+                </h3>
+
+                <p>
+                    I hope you achieve the things
+                    you've been working towards. And 
+                    I know my girl will achieve everything
+                    what she dreams of.I am always here 
+                    with you.
+                </p>
+
+            </div>
+
+
+            <div class="future-card">
+
+                <span>✈️</span>
+
+                <h3>
+                    Adventures
+                </h3>
+
+                <p>
+                    I hope we will spend lots of 
+                    adventures and tours together.
+                    Just like everyone will call us birds 
+                    that a new year comes and again they start 
+                    another tour. And just money and money.
+                </p>
+
+            </div>
+
+
+            <div class="future-card">
+
+                <span>📸</span>
+
+                <h3>
+                    Beautiful Memories
+                </h3>
+
+                <p>
+                    And finally I hope we will complete
+                    all of our 11:11 wishes. Right nah 
+                    Babeeeeee????
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =========================================
+         14 — LOCKED FINAL GIFT
+    ========================================== -->
+
+    <section id="finalGift"
+             class="page-section final-gift-section">
+
+        <div class="lock-icon">
+            🔒
+        </div>
+
+        <p class="tiny-heading">
+            ONE LAST GIFT
+        </p>
+
+        <h2>
+            This One Is Locked
+        </h2>
+
+        <p class="section-description">
+
+            You've explored almost everything.
+
+            <br><br>
+
+            But there is one final surprise
+            waiting for you.
+
+        </p>
+
+
+        <button class="main-button"
+                onclick="unlockFinalGift()">
+
+            🔑 UNLOCK MY FINAL GIFT
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================================
+     15 — FINAL FULL SCREEN SURPRISE
+========================================== -->
+
+<section id="finalSurprise"
+         class="page-section final-section">
+
+    <div class="final-background"></div>
+
+    <div class="final-overlay"></div>
+
+    <div class="final-content">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <p class="tiny-heading">
+            FOR YOU
+        </p>
+
+        <h2>
+            Happy Birthday, Tori.
+        </h2>
+
+        <p class="final-text">
+
+    <span class="final-line">
+        If you reached this part...
+    </span>
+
+    <span class="final-line">
+        then you have officially explored
+        the little birthday world I made for you.
+    </span>
+
+    <span class="final-line">
+        I hope you smile today.
+    </span>
+
+    <span class="final-line">
+        I hope this year is kind to you.
+    </span>
+
+    <span class="final-line">
+        I hope you get everything
+        your heart wishes for.
+    </span>
+
+    <span class="final-line">
+        And most importantly...
+    </span>
+
+    <span class="final-line special-wish">
+        I hope you always remember
+        how special you are.
+    </span>
+
+    <span class="final-line final-birthday">
+        Happy Birthday. ❤️
+    </span>
+
+</p>
+
+        <div class="final-signature">
+    <span>— Your Pushpak</span>
+        </div>
+    </div>
+
+</section>
+
+
+
+    <!-- =========================================
+         POP-UP / MODAL
+    ========================================== -->
+
+    <div id="modal"
+         class="modal">
+
+        <div class="modal-box">
+
+            <button class="modal-close"
+                    onclick="closeModal()">
+
+                ×
+
+            </button>
+
+
+            <div id="modalIcon"
+                 class="modal-icon">
+
+                🎁
+
+            </div>
+
+
+            <h2 id="modalTitle">
+                Surprise
+            </h2>
+
+
+            <p id="modalText">
+                Something special for you.
+            </p>
+
+
+            <button class="main-button"
+                    onclick="closeModal()">
+
+                CLOSE ❤️
+
+            </button>
+
+        </div>
+
+
+
+</body>
+</html>  
